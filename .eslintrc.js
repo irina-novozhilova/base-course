@@ -13,11 +13,8 @@ module.exports = {
   plugins: ["jest"],
   rules: {
     "import/prefer-default-export": "off",
-    "max-len": [
-      "error",
-      {
-        ignoreComments: true,
-      },
-    ],
+    "max-len": "off",
+    "no-console": ["error", { allow: ["warn", "error", "log"] }],
+    "no-alert": "off",
   },
 };
