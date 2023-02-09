@@ -19,4 +19,12 @@ describe("whatKindOfString", () => {
     console.log = jest.fn();
     expect(whatKindOfString()).toBe("It is phone");
   });
+
+  it('return "Error" for prompt "saljfijsdjfdlsajdflas"', () => {
+    jest
+      .spyOn(window, "prompt")
+      .mockImplementation(() => "saljfijsdjfdlsajdflas");
+    console.log = jest.fn();
+    expect(whatKindOfString()).toBe("ERROR");
+  });
 });

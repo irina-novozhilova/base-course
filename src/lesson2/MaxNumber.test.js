@@ -9,6 +9,11 @@ describe("showMaxNumber", () => {
     showMaxNumber(5, 6);
     expect(console.log.mock.calls[0][0]).toBe(6);
   });
+  it('return "10" for showMultiplySumNumber(10,6)', () => {
+    console.log = jest.fn();
+    showMaxNumber(10, 6);
+    expect(console.log.mock.calls[0][0]).toBe(10);
+  });
   it('return "числа равны" for showMultiplySumNumber(5,5)', () => {
     console.log = jest.fn();
     showMaxNumber(5, 5);

@@ -7,4 +7,7 @@ describe("diff", () => {
   it("return '2' for diff(9,7)", () => {
     expect(diff(9, 7)).toBe(2);
   });
+  it("return '2' for diff(7,9)", () => {
+    expect(diff(7, 9)).toBe(2);
+  });
 });
