@@ -14,7 +14,7 @@ export function createUI(element) {
   const list = el.querySelector("div.list");
 
   button.addEventListener("click", () => {
-    const {value} = input;
+    const { value } = input;
     list.insertAdjacentHTML("beforeend", `<p>${value}</p>`);
     const p = list.querySelectorAll("p");
     if (p.length > 5) {

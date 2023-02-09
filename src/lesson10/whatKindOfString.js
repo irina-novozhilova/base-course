@@ -6,11 +6,12 @@ export function whatKindOfString() {
 
   if (regexpData.test(input)) {
     return "It is date";
-  } if (regexpEmail.test(input)) {
+  }
+  if (regexpEmail.test(input)) {
     return "It is email";
-  } if (regexpPhone.test(input)) {
+  }
+  if (regexpPhone.test(input)) {
     return "It is phone";
-  } 
-    return "ERROR";
-  
+  }
+  return "ERROR";
 }

@@ -7,9 +7,9 @@ export function showWhichUserIsYounger(person1, person2) {
 
   if (diff > 0) {
     return "Первый персонаж младше второго";
-  } if (diff < 0) {
+  }
+  if (diff < 0) {
     return "Первый персонаж старше второго";
-  } 
-    return "Персонажи одинакового возраста";
-  
+  }
+  return "Персонажи одинакового возраста";
 }
